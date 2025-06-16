@@ -196,16 +196,13 @@ class User {
   }
 }
 
-// Пример использования
-console.log(User.signUp("UserA", "Password123", "Password123"));
-console.log(User.signUp("UserB", "Password456", "Password456"));
-
-console.log(User.verify("UserA", "111-1111", "20", "1234-5678", "Moscow"));
-console.log(User.forgetPwd("UserA", "111-1111", "NewPassword123"));
-
-console.log(User.users[0].signIn("UserA", "NewPassword123"));
-
+console.log(User.signUp("user_1", "123123", "123123"));
+console.log(User.signUp("user_2", "321321", "321321"));
+console.log(User.verify("user_1", "8800553535", "18", "1234-5678", "Vladivostok"));
+console.log(User.forgetPwd("user_1", "8800553535", "123123123"));
+console.log(User.users[0].signIn("user_1", "123123123"));
 console.log(User.transactionTrigger(1, 2, "USD", 20));
 console.log(User.transactionReceive(1, 2, true));
-
 console.log(User.toggleOnlineStatus(2, true));
+
+
