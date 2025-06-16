@@ -196,12 +196,12 @@ class User {
   }
 }
 
-console.log(User.signUp("user_1", "123123", "123123"));
-console.log(User.signUp("user_2", "321321", "321321"));
-console.log(User.verify("user_1", "8800553535", "18", "1234-5678", "Vladivostok"));
-console.log(User.forgetPwd("user_1", "8800553535", "123123123"));
-console.log(User.users[0].signIn("user_1", "123123123"));
-console.log(User.transactionTrigger(1, 2, "USD", 20));
+console.log(User.signUp("user1", "123123", "123123"));
+console.log(User.signUp("user2", "321321", "321321"));
+console.log(User.verify("user1", "8800553535", "18", "1234-5678", "Vladivostok"));
+console.log(User.forgetPwd("user1", "8800553535", "123123123"));
+console.log(User.users[0].signIn("user1", "123123123"));
+console.log(User.transactionTrigger(1, 2, "USD", 50));
 console.log(User.transactionReceive(1, 2, true));
 console.log(User.toggleOnlineStatus(2, true));
 
